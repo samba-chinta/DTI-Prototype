@@ -6,17 +6,17 @@ let signDiv = document.getElementById("signup-form");
 logBtn.onclick = () => {
   logDiv.style.left = "0px";
   signDiv.style.left = "450px";
-  logBtn.style.backgroundColor = "#2979FF";
-  signBtn.style.backgroundColor = "#fff";
-  logBtn.style.color = "#fff";
-  signBtn.style.color = "#000";
+  logBtn.style.backgroundColor = "#fff";
+  signBtn.style.backgroundColor = "#2979FF";
+  logBtn.style.color = "#000";
+  signBtn.style.color = "#fff";
 }
 
 signBtn.onclick = () => {
   logDiv.style.left = "450px";
   signDiv.style.left = "0px";
-  signBtn.style.backgroundColor = "#2979FF";
-  logBtn.style.backgroundColor = "#fff";
-  signBtn.style.color = "#fff";
-  logBtn.style.color = "#000";
+  signBtn.style.backgroundColor = "#fff";
+  logBtn.style.backgroundColor = "#2979FF";
+  signBtn.style.color = "#000";
+  logBtn.style.color = "#fff";
 }
