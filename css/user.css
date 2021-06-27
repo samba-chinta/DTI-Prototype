@@ -61,7 +61,7 @@ form{
   transition: 0.5s;
 }
 
-#login-form{
+#login-form, #otp{
   left: 460px;
 }
 
@@ -82,7 +82,7 @@ label{
   font-weight: lighter;
 }
 
-input[type="submit"]{
+input[type="submit"], #prev, #next{
   width: 40%;
   padding: 10px;
   background-color: #2979FF;

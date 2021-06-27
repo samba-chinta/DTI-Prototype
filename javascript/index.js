@@ -2,8 +2,12 @@ let logBtn = document.getElementById("login");
 let logDiv = document.getElementById("login-form");
 let signBtn = document.getElementById("signup");
 let signDiv = document.getElementById("signup-form");
+let otpDiv = document.getElementById("otp");
+let next = document.getElementById("next");
+let prev = document.getElementById("prev");
 
 logBtn.onclick = () => {
+  otpDiv.style.left = "450px";
   logDiv.style.left = "0px";
   signDiv.style.left = "450px";
   logBtn.style.backgroundColor = "#fff";
@@ -13,10 +17,23 @@ logBtn.onclick = () => {
 }
 
 signBtn.onclick = () => {
+  otpDiv.style.left = "450px";
   logDiv.style.left = "450px";
   signDiv.style.left = "0px";
   signBtn.style.backgroundColor = "#fff";
   logBtn.style.backgroundColor = "#2979FF";
   signBtn.style.color = "#000";
   logBtn.style.color = "#fff";
+}
+
+next.onclick = () => {
+  otpDiv.style.left = "0px";
+  signDiv.style.left = "450px";
+  logDiv.style.left = "450px";
+}
+
+prev.onclick = () => {
+  otpDiv.style.left = "450px";
+  signDiv.style.left = "0px";
+  logDiv.style.left = "450px";
 }

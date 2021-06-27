@@ -14,12 +14,17 @@
       <button type="button" id="login">Log In</button>
       <button type="button" id="signup">Sign Up</button>
     </div>
-    <form action="#" id="signup-form">
+    <form action = "#" id="signup-form">
       <input type="text" name="Email" id="mail" placeholder="Email" required>
       <input type="text" name="Username" id="name" placeholder="Username" required>
       <input type="password" name="pswd" id="pswd" placeholder="Password" required>
       <input type="password" name="re-pswd" id="re-pswd" placeholder="Confirm Password" required>
-      <input type="submit" value="SignUp">
+      <input type="button" value="Next" id="next">
+    </form>
+    <form action="#" id="otp">
+      <input type="text" name="otp-num" id="otp-value" placeholder="Enter OTP" required>
+      <input type="button" value="Previous" id="prev">
+      <input type="submit" value="Signin">
     </form>
     <form action="#" id="login-form">
       <input type="text" name="User" id="mail-name" placeholder="Email or Username" required>
