@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, serif;
+}
+
+body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-image: url('../assets/dti-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  width: 380px;
+  height: 400px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.container .btn-box{
+  width: 100%;
+  height: 50px;
+  display: flex;
+
+}
+
+.btn-box #login, .btn-box #signup{
+  width: 50%;
+  outline: none;
+  border: 0;
+  height: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+#login{
+  background-color: #2979FF;
+  color: #fff;
+}
+
+#signup{
+  background-color: transparent;
+}
+
+form{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+#login-form{
+  left: 460px;
+}
+
+input:not(:is([type="submit"], [type="checkbox"])){
+  width: 280px;
+  outline: none;
+  padding: 10px;
+  margin: 10px auto;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 1px #000;
+}
+
+label{
+  margin: 10px auto 0 50px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+input[type="submit"]{
+  width: 40%;
+  padding: 10px;
+  background-color: #2979FF;
+  color: #fff;
+  outline: none;
+  border: 0;
+  margin: 10px 50px 0 auto;
+}
+
+a{
+  margin: 30px auto;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .container{
+    width: 350px;
+  }
+}
