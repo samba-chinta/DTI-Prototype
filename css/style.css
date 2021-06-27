@@ -16,6 +16,7 @@ body{
   justify-content: center;
   align-items: center;
   background-image: url('../assets/dti-bg.jpg');
+  background-position: center;
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
