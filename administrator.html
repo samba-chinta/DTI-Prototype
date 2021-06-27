@@ -5,10 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="/index.html">
-  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/user.css">
   <title>Admin Login/SignUp page</title>
 </head>
 <body>
-  <h1>Admin Login Page</h1>
+  <div class="container">
+    <div class="btn-box">
+      <button type="button" id="login">Log In</button>
+      <button type="button" id="signup">Sign Up</button>
+    </div>
+    <form action="#" id="signup-form">
+      <input type="text" name="Email" id="mail" placeholder="Email" required>
+      <input type="text" name="adminname" id="name" placeholder="Admin Name" required>
+      <input type="text" name="Registration" id="reg" placeholder="Registration Number" required>
+      <input type="password" name="pswd" id="pswd" placeholder="Password" required>
+      <input type="password" name="re-pswd" id="re-pswd" placeholder="Confirm Password" required>
+      <input type="submit" value="SignUp">
+    </form>
+    <form action="#" id="login-form">
+      <input type="text" name="User" id="Registration" placeholder="Registration Number" required>
+      <input type="password" name="pswd" id="pswd" placeholder="Password" required>
+      <label for="remember">
+        <input type="checkbox" name="remember" id="remember"> Remember Me
+      </label>
+      <input type="submit" value="Login">
+      <a href="#">Forget Password?</a>
+    </form>
+  </div>
+  <script src="/javascript/index.js"></script>
 </body>
 </html>
