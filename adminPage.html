@@ -17,17 +17,37 @@
   </header>
 
   <main class="hero">
+    <!--Table container-->
     <div id="container">
       <table id="myTable">
         <tr class="header">
           <th>Medicine</th>
-          <th>Used For</th>
           <th>Availability</th>
+
+          <th>Used For</th>
           <th>Cost</th>
         </tr>
       </table>
     </div>
+
+    <!--Input taker-->
+    <div id="wrapper">
+      <form id="content-adder" action="#">
+        <input type="text" name="medicine" id="medicine" placeholder="Enter medicine name">
+        <label for="available">Availability
+          <select name="available" id="availabilty">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+        <input type="text" name="used" id="usesFor" placeholder="Uses For:">
+        <input type="text" name="cost" id="cost" placeholder="Enter cost of medicine:">
+        <input type="submit" value="Add" id="add">
+      </form>
+    </div>
   </main>
+
+  <button id="btn">Add New</button>
   <script src="/javascript/adminPageJs.js"></script>
 </body>
 </html>
