@@ -1,0 +1,84 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#admin-info{
+  height: 55px;
+  background-color: #2979FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#admin-info h2{
+  color: #fff;
+  margin: 0 10px;
+}
+
+#admin-info .info a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 15px;
+}
+
+#admin-info .info #logout-btn{
+  outline: none;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.hero{
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  height: 80vh;
+  /* background-color: antiquewhite; */
+}
+
+.hero #container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#container #myTable{
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#myTable tr th{
+  height: 40px;
+  background-color: #607d8b;
+  margin: 0 20px;
+  color: #fff;
+}
+
+#myTable .row td{
+	background-color: #f1f1f1;
+}
+
+#myTable .row td{
+	text-align: center;
+	padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  #admin-info{
+    justify-content: flex-end;
+  }
+  #admin-info h2{
+    display: none;
+  }
+}
