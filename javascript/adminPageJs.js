@@ -1,6 +1,7 @@
-let btn = document.getElementById("btn");
+let addBtn = document.getElementById("add-btn");
 let tabCon = document.getElementById("container");
 let wrapper = document.getElementById("wrapper");
+let editWrapper = document.getElementById("modifing-wrapper");
 let tab = document.getElementById("myTable");
 
 let medicine_lst = [
@@ -10,8 +11,12 @@ let medicine_lst = [
 
 window.onload = () => {
 	for(i of medicine_lst){
-		const row = `<tr class="row"><td>${i.medicine}</td><td>${i.available}</td>
-                <td>${i.used}</td><td>Rs. ${i.cost}</td></tr>`;
+		const row = `<tr class="row">
+			<td contenteditable="true">${i.medicine}</td>
+			<td contenteditable="true">${i.available}</td>
+			<td contenteditable="true">${i.used}</td>
+			<td contenteditable="true">Rs. ${i.cost}</td>
+		</tr>`;
 	tab.innerHTML += row;
 	}
 }
@@ -33,7 +38,7 @@ class myMedicine{
 	}
 }
 
-btn.onclick = () => {
+addBtn.onclick = () => {
 	tabCon.style.display = "none";
 	wrapper.style.display = "flex";
 }
@@ -55,8 +60,12 @@ document.getElementById("add").onclick = (e) => {
 // adding the received data to the table
 function appendRow(newJson){
 	medicine_lst.push(newJson);
-	const row = `<tr class="row"><td>${newJson.medicine}</td><td>${newJson.available}</td>
-              <td>${newJson.used}</td><td>Rs. ${newJson.cost}</td></tr>`;
+	const row = `<tr class="row">
+			<td contenteditable="true">${newJson.medicine}</td>
+			<td contenteditable="true">${newJson.available}</td>
+			<td contenteditable="true">${newJson.used}</td>
+			<td contenteditable="true">Rs. ${newJson.cost}</td>
+	</tr>`;
 	tab.innerHTML += row;
 	wrapper.style.display = "none";
 	tabCon.style.display = "block";
