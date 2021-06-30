@@ -31,11 +31,13 @@ let myFunc = (lst) => {
 document.getElementById("req").onchange = () => {
   let arr = ["Donate", "Request"];
   let id = document.getElementById("req").value ;
-  let reqId = arr.filter((e) => {
-    return e != id;
-  })
-  document.getElementById(id).style.display = "flex";
-  document.getElementById(reqId[0]).style.display = "none";
+  if(id != null){
+    let reqId = arr.filter((e) => {
+      return e != id;
+    })
+    document.getElementById(id).style.display = "flex";
+    document.getElementById(reqId[0]).style.display = "none";
+  }
 }
 
 document.getElementById("search").addEventListener('keyup', () => {

@@ -69,9 +69,9 @@ button{
 }
 
 .container .side-content{
-  height: auto;
+  height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   border-top: 0;
@@ -86,6 +86,7 @@ button{
 }
 
 .side-content form{
+  width: 80%;
   margin: 20px auto;
   display: none;
   height: 150px;
@@ -93,9 +94,21 @@ button{
   justify-content: space-evenly;
 }
 
-form [type="submit"]{
+#Request{
+  display: flex;
+}
+
+form input[type="text"]{
   outline: none;
-  padding: 5px;
+  border: solid 1px #000;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+form [type="submit"]{
+  width: 100%;
+  outline: none;
+  padding: 10px;
   border: 0;
   background-color: #2979FF;
   color: #fff;
