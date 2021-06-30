@@ -1,0 +1,129 @@
+#user-info{
+  height: 55px;
+  background-color: #2979FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#user-info h2{
+  color: #fff;
+  margin: 0 10px;
+}
+
+#user-info .info a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 15px;
+}
+
+#user-info .info #logout-btn{
+  outline: none;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+button{
+  width: 200px;
+  outline: none;
+  border: none;
+  /* border-right: solid 1px #000; */
+  padding: 10px 0;
+}
+
+.search-wrapper{
+  height: 70vh;
+  margin: 5px 0;
+  background: #000;
+  background-image: url('../assets/dti-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-wrapper input{
+  outline: none;
+  padding: 15px;
+  border: 0;
+  width: 50%;
+  font-size: 15px;
+}
+
+.search-wrapper input::placeholder{
+  font-size: 15px;
+}
+
+.container{
+  margin: 10px 0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.container .side-content{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: solid 2px #eee;
+}
+
+.side-content #req{
+  width: 70%;
+  padding: 5px;
+}
+
+.side-content form{
+  margin: 20px auto;
+  display: none;
+  height: 150px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+form [type="submit"]{
+  outline: none;
+  padding: 5px;
+  border: 0;
+  background-color: #2979FF;
+  color: #fff;
+}
+
+#myTable{
+  width: 100%;
+  margin: 10px 0;
+}
+
+#myTable tr{
+  height: 40px;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #user-info{
+    justify-content: flex-end;
+  }
+  #user-info h2{
+    display: none;
+  }
+  .search-wrapper input{
+    width: 300px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
