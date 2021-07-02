@@ -16,14 +16,18 @@
     </div>
   </header>
 
+  <!-- <div class="bg-container">
+    <a href="#">Get Started</a>
+  </div> -->
+  
   <main class="hero">
     <!--Table container-->
     <div id="container">
       <table id="myTable">
         <tr class="header">
           <th>Medicine</th>
-          <th>Availability</th>
           <th>Used For</th>
+          <th>Count(sheets)</th>
           <th>Cost</th>
         </tr>
       </table>
@@ -33,13 +37,14 @@
     <div id="wrapper">
       <form id="content-adder" action="#">
         <input type="text" name="medicine" id="medicine" placeholder="Enter medicine name">
-        <label for="available">Availability
+        <!-- <label for="available">Availability
           <select name="available" id="availabilty">
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
-        </label>
+        </label> -->
         <input type="text" name="used" id="usesFor" placeholder="Uses For:">
+        <input type="text" name="count" id="count" placeholder="Count(sheets) :">
         <input type="text" name="cost" id="cost" placeholder="Enter cost of medicine:">
         <input type="submit" value="Add" id="add">
       </form>
