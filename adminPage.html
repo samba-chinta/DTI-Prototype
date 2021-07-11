@@ -50,9 +50,30 @@
       </form>
     </div>
 
+    <div id="blood-wrapper">
+      <form action="#" id="blood-req">
+        <label for="blood-group">Blood Group:
+          <select name="blood-grp" id="blood-group">
+            <option value="#" selected>Select</option>
+            <option value="ab+">AB+</option>
+            <option value="ab-">AB-</option>
+            <option value="b+">B+</option>
+            <option value="b-">B-</option>
+            <option value="a+">A+</option>
+            <option value="a-">A-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </label>
+        <input type="number" name="BloodUnits" id="units" min="1" step="1" placeholder="Enter the required units:" required>
+        <input type="submit" value="Request Blood">
+      </form>
+    </div>
+
   </main>
 
   <div class="accessors">
+    <button id="req-btn">Request Blood</button>
     <button id="add-btn">Add New</button>
   </div>
   <script src="/javascript/adminPageJs.js"></script>

@@ -1,7 +1,8 @@
 let addBtn = document.getElementById("add-btn");
+let reqBtn = document.getElementById("req-btn");
 let tabCon = document.getElementById("container");
 let wrapper = document.getElementById("wrapper");
-let editWrapper = document.getElementById("modifing-wrapper");
+let bloodWrapper = document.getElementById("blood-wrapper");
 let tab = document.getElementById("myTable");
 
 let medicine_lst = [
@@ -41,6 +42,11 @@ class myMedicine{
 addBtn.onclick = () => {
 	tabCon.style.display = "none";
 	wrapper.style.display = "flex";
+}
+
+reqBtn.onclick = () => {
+	tabCon.style.display = "none";
+	bloodWrapper.style.display = "flex";
 }
 
 document.getElementById("add").onclick = (e) => {
