@@ -1,2 +1,2 @@
 # DTI-Prototype
-Prototype on increasing medical accessibility and Blood requirements
+Prototype on increasing medical accessibility and Blood requirements through Internet
