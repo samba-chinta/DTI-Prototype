@@ -13,6 +13,7 @@
   <nav id="user-info">
     <h2 id="user-name">UserName</h2>
     <div class="info">
+      <a href="#">Donate</a>
       <a href="#">Your Profile</a>
       <button id="logout-btn">Logout</button>
     </div>
@@ -26,7 +27,6 @@
     <div class="side-content">
       <select name="blood-op" id="req">
         <option value="Request">Request Blood</option>
-        <option value="Donate">Donate Blood</option>
       </select>
       <form action="#" id="Request">
         <label for="blood-type">
@@ -45,26 +45,7 @@
         <input type="text" name="patient-name" id="patient-name" placeholder="Enter Patient Name:">
         <input type="text" name="patient-age" id="patient-age" placeholder="Enter Patient Age:">
         <input type="text" name="hospital-address" id="hosiptal-add" placeholder="Enter Hospital Address:">
-        <input type="submit" value="Request">
-      </form>
-      <form action="#" id="Donate">
-        <label for="blood-type">
-          Select Blood Group:
-          <select name="blood-type">
-            <option value="O+">O+</option>
-            <option value="O-">O+</option>
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB-</option>
-          </select>
-        </label>
-        <input type="text" name="donor-name" id="donor-name" placeholder="Enter Donor Name:">
-        <input type="text" name="donor-age" id="donor-age" placeholder="Enter Donor Age:">
-        <input type="text" name="donor-address" id="donor-add" placeholder="Enter Donor Address:">
-        <input type="submit" value="Donate">
+        <input type="submit" value="Request Blood">
       </form>
     </div>
     <div class="search-result">

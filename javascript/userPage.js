@@ -1,14 +1,13 @@
 let myData = [
-  {"medicine": "Paramol", "cost": 10, "available": "Apollo"},
-  {"medicine": "Afigin", "cost": 5, "available": "Apollo"},
-  {"medicine": "Avil", "cost": 100, "available": "Apollo"},
-  {"medicine": "Sputnik", "cost": 150, "available": "Apollo"},
-  {"medicine": "Covishield", "cost": 500, "available": "Apollo"},
-  {"medicine": "Dolo", "cost": 20, "available": "Apollo"},
-  {"medicine": "Paramol", "cost": 60, "available": "Apollo"},
-  {"medicine": "Eno", "cost": 20, "available": "Apollo"},
-  {"medicine": "Delta", "cost": 130, "available": "Apollo"},
-  {"medicine": "Covaxin", "cost": 400, "available": "Apollo"}
+  {"medicine": "Paramol", "cost": 10, "available": "Apollo", "count": 100},
+  {"medicine": "Afigin", "cost": 5, "available": "Keerthi Store", "count": 20},
+  {"medicine": "Avil", "cost": 100, "available": "Sneha Medical store", "count": 35},
+  {"medicine": "Sputnik", "cost": 150, "available": "Amrutha Medical Store", "count": 31},
+  {"medicine": "Covishield", "cost": 500, "available": "PVR Medical Store", "count": 25},
+  {"medicine": "Dolo", "cost": 20, "available": "MedPlus", "count": 20},
+  {"medicine": "Paramol", "cost": 60, "available": "Apollo Pharmacy", "count": 73},
+  {"medicine": "Eno", "cost": 20, "available": "Nexus Pharmacy", "count": 92},
+  {"medicine": "Delta", "cost": 130, "available": "Apollo", "count": 87},
 ]
 
 let myFunc = (lst) => {
@@ -16,13 +15,15 @@ let myFunc = (lst) => {
   tab.innerHTML = `<tr>
     <th>Medicine</th>
     <th>Cost</th>
-    <th>Available</th>
+    <th>Available at</th>
+    <th>Count</th>
   </tr>`;
   for (const ele of lst) {
     const row = `<tr class="row">
 			<td>${ele.medicine}</td>
 			<td>Rs. ${ele.cost}</td>
 			<td>${ele.available}</td>
+      <td>${ele.count}</td>
 	  </tr>`; 
     tab.innerHTML += row;
   }
